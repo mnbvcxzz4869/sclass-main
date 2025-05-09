@@ -12,7 +12,8 @@
         <textarea name="content" placeholder="content"></textarea>
         <button type="submit">Create</button>
     </form>
-
+    <br>
+    <a href="/blog/list/">Kembali ke Daftar Post</a>
     {% for res in  result %}
         <p>{{ res.content }}</p>
     {% endfor %}

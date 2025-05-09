@@ -8,5 +8,5 @@ def view(request):
 
         result = query("INSERT INTO blog_post (title, content) VALUES (%s, %s)", [title, content])
         print(result)
-
+        
     return render(request, 'app_blog/create.html')
